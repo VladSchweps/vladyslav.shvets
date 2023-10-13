@@ -15,9 +15,8 @@ public class Runner {
             brute.attacks(filePath);
         }
         else {
-            System.out.println("Invalid data. Please write correct data");
+            throw new IllegalArgumentException("Invalid data. Please write correct data");
         }
-
     }
 
     public void run(String command, Path filePath, int key) {

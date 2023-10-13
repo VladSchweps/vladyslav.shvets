@@ -26,10 +26,8 @@ public class Cipher {
                 encryptedText.append(currentChar);
             }
         }
-
-//        return encryptedText.toString();
         fileService.writeToFile(fileService.addFileNameAnnotation(filePath, anotation)
-                ,encryptedText.toString());
+                , encryptedText.toString());
     }
 
     public void decrypted(Path filePath, int key, String anotation) {

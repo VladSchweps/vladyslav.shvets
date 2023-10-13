@@ -18,6 +18,7 @@ public class Main {
             runner.run(command, filePath, key);
         } else {
             System.out.println("Problem with arguments, please write valid data");
+            throw new IllegalArgumentException("Problem with arguments, please write valid data");
         }
     }
 }
