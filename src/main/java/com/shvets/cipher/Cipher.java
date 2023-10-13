@@ -5,7 +5,7 @@ import com.shvets.FileService;
 import java.nio.file.Path;
 
 public class Cipher {
-    FileService fileService = new FileService();
+    private final FileService fileService = new FileService();
 
     private static final int ALPHABET_LENGTH = 26;
 
@@ -26,10 +26,8 @@ public class Cipher {
                 encryptedText.append(currentChar);
             }
         }
-
-//        return encryptedText.toString();
         fileService.writeToFile(fileService.addFileNameAnnotation(filePath, anotation)
-                ,encryptedText.toString());
+                , encryptedText.toString());
     }
 
     public void decrypted(Path filePath, int key, String anotation) {
