@@ -12,8 +12,8 @@ public class BruteForce {
 
     private static final int  ALPHABET_LENGTH = 26;
 
-    Cipher cipher = new Cipher();
-    FileService fileService = new FileService();
+    private final Cipher cipher = new Cipher();
+    private final FileService fileService = new FileService();
 
     public void attacks(Path filePath) {
         String text = fileService.readFile(filePath);

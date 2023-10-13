@@ -5,7 +5,7 @@ import com.shvets.FileService;
 import java.nio.file.Path;
 
 public class Cipher {
-    FileService fileService = new FileService();
+    private final FileService fileService = new FileService();
 
     private static final int ALPHABET_LENGTH = 26;
 
